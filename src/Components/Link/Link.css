@@ -1,0 +1,100 @@
+.download-link {
+    color: #009bf6;
+    border-bottom: 1px solid #009bf6;
+    position: relative;
+}
+
+.tooltip:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(50,50,50,0.8);
+    color: #fff;
+    width: 100px;
+    height: 26px;
+    border-radius: 5px;
+    margin-left: 51px;
+    z-index: 1;
+    padding: 5px 0;
+    top: 39%;
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+.tooltip:before {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    top: 7%;
+    right: -47%;
+    border-style: solid;
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.right-tooltip:after {
+    top: -40%;
+    left: 76%;
+}
+.left-tooltip:after{
+    top: -43%;
+    left: 40%;
+}
+.up-tooltip:after{
+    left: -91%;
+    top: -35%;
+}
+.down-tooltip:after{
+    margin-left: -86px;
+}
+.right-tooltip:before{
+    border-color: transparent #636363 transparent transparent;
+
+}
+.left-tooltip:before{
+    border-color: transparent transparent transparent #636363;
+
+}
+.up-tooltip:before{
+    border-color: #636363 transparent transparent transparent;
+}
+.down-tooltip:before {
+    border-color: transparent transparent #636363 transparent;
+}
+.right-tooltip:hover::after {
+    opacity: 1;
+    left: 48%;
+
+}
+.right-tooltip:hover::before{
+    opacity: 1;
+    right: -18%;
+}
+
+.left-tooltip:hover::after {
+    opacity: 1;
+    left: -216%;
+
+}
+.left-tooltip:hover::before{
+    opacity: 1;
+    left: -14%;
+}
+.up-tooltip:hover::before{
+    opacity: 1;
+    top: -40%;
+    margin-right: 70px;
+}
+.up-tooltip:hover::after{
+    opacity: 1;
+    top: -240%;
+}
+.down-tooltip:hover::before{
+    opacity: 1;
+    right: 40%;
+    bottom: -89%
+}
+.down-tooltip:hover::after{
+    opacity: 1;
+    top: 192%;
+    left: 101%;
+}
+

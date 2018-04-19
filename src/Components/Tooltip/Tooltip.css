@@ -1,0 +1,27 @@
+.wrapper {
+    position: fixed;
+    width: 100px;
+    pointer-events: none;
+}
+
+.tooltipContent {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    position: relative;
+    width: 80px;
+    top: -26px;
+}
+
+.tooltipArrow {
+    content: '';
+    position: absolute;
+    margin-left: 34px;
+    border: 7px solid;
+    border-color: rgba(0,0,0,0.6) transparent transparent transparent;
+}

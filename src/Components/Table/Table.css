@@ -1,0 +1,77 @@
+.fileTable {
+    width: 600px;
+    height: 360px;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -180px;
+    position: fixed;
+    border: 1px solid #009bf6;
+    letter-spacing: 1px;
+}
+
+.mainTable {
+        border-collapse: collapse;
+    }
+
+tr.tableRow:first-child {
+    background-color: #009bf6;
+}
+    
+tr.tableRow:nth-child(2n+2) {
+    background-color: #f4f4f4;
+}
+        
+tr.tableRow:nth-child(2n+3) {
+    background-color: #e8e8e8;
+}
+.nameCol{
+    text-align: left;
+}
+
+td.nameCol:not(.filename) {
+    padding-left: 20px;
+    color: #7f7e7e;
+    font-weight: 600;
+    font-size: 16px;
+}
+td.downloadCol:not(.filelink) {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.downloadCol{
+    text-align: center;
+
+}
+
+.tableCol {
+    border-right: 1px solid #009bf6;
+    border-collapse: collapse;
+}
+
+table td.tableCol:last-child {
+    border-right: none;
+}
+td.nameCol:not(.filename) {
+    padding-left: 20px;
+    color: #7f7e7e;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.filename,
+.filelink{
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.downloadLink {
+    color: #009bf6;
+    border-bottom: 1px solid #009bf6;
+    position: relative;
+    text-decoration: none;
+}
+
